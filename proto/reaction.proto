@@ -3,7 +3,7 @@ syntax = "proto3";
 package reaction;
 
 service ReactionService{
-  rpc reactionCreated() returns(){}
+  rpc reactionCreated(ReactionCreatedRequest) returns(ReactionCreatedResponse){}
 }
 
 message ReactionCreatedRequest{
